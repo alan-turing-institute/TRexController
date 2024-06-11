@@ -113,8 +113,8 @@
             let positionOutput = `{ "joy1X": ${joy1X}`;
             positionOutput += `, "joy1Y": ${joy1Y}`;
             positionOutput += `, "joy2X": ${joy2X}`;
-            positionOutput += `, "joy2Y": ${joy2Y}}`;
-            positionOutput += `, "joy3X": ${joy3X}}`;
+            positionOutput += `, "joy2Y": ${joy2Y}`;
+            positionOutput += `, "joy3X": ${joy3X}`;
             positionOutput += `, "joy3Y": ${joy3Y}}`;
             ws.send(positionOutput);
             lastFrameCentred = false;
@@ -186,7 +186,7 @@
       function () {
           sendPositions(Joy1.GetX(), Joy1.GetY(), Joy2.GetX(), Joy2.GetY(), Joy3.GetX(), Joy3.GetY());
       },
-      500
+      100
     );
   </script>
 </body>
