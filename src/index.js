@@ -28,7 +28,7 @@ wss.on('connection', (ws) => {
 	  const clientId = "TREG";
 	  clients.set(clientId, ws);
 
-	  ws.send(`Echo: ${message}`);
+	  ws.send(`${message}`);
       } else {
 
 	  if (clients.has("TREG")) {
