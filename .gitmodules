@@ -1,3 +1,0 @@
-[submodule "websockets/wsServer"]
-	path = websockets/wsServer
-	url = https://github.com/Theldus/wsServer
