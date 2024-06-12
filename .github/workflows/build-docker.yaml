@@ -19,5 +19,5 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         working-directory: .
         run: |
-          docker build -f Dockerfile -t nbarlow/trexcontroller:latest . ;
-          docker push nbarlow/trexcontroller:latest ;
+          docker build -f Dockerfile -t ${{ secrets.DOCKER_HUB_USERNAME }}/tregcontroller:latest . ;
+          docker push ${{ secrets.DOCKER_HUB_USERNAME }}/tregcontroller:latest ;
