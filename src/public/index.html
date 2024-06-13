@@ -131,6 +131,9 @@
     function sendClose() {
         ws.send("close");
     }
+    function sendStart() {
+        ws.send("start");
+    }
 
     function output(str) {
         const log = document.getElementById("log");
@@ -163,6 +166,9 @@
   <div class="row">
     <div class="column">
       <button id="openButton" class="button" onclick="sendOpen();">Open Jaw</button>
+    </div>
+    <div class="column">
+      <button id="startButton" class="button" onclick="sendStart();">(re)start</button>
     </div>
     <div class="column">
       <button id="closeButton" class="button" onclick="sendClose();">Close Jaw</button>
